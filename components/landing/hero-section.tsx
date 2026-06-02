@@ -178,7 +178,7 @@ export function HeroSection() {
               )}
 
               {/* Search Button */}
-              <Button size="lg" className="h-12 px-8">
+              <Button size="lg" className="h-12 px-8 cameroon-gradient text-primary-foreground">
                 <Search className="h-4 w-4 mr-2" />
                 Search
               </Button>

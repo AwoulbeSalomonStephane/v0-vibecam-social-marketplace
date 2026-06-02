@@ -4,81 +4,90 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Light mode - warm cream with amber accents */
-  --background: oklch(0.98 0.005 85);
-  --foreground: oklch(0.15 0.02 45);
+  /* Light mode - Cameroon vibes: warm, vibrant, friendly */
+  --background: oklch(0.98 0.008 95);
+  --foreground: oklch(0.20 0.02 150);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0.02 45);
+  --card-foreground: oklch(0.20 0.02 150);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0.02 45);
-  --primary: oklch(0.65 0.18 55);
-  --primary-foreground: oklch(0.98 0.005 85);
-  --secondary: oklch(0.95 0.01 85);
-  --secondary-foreground: oklch(0.25 0.02 45);
-  --muted: oklch(0.94 0.01 85);
-  --muted-foreground: oklch(0.45 0.02 45);
-  --accent: oklch(0.75 0.15 55);
-  --accent-foreground: oklch(0.15 0.02 45);
-  --destructive: oklch(0.55 0.22 27);
+  --popover-foreground: oklch(0.20 0.02 150);
+  --primary: oklch(0.55 0.18 145);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.94 0.02 95);
+  --secondary-foreground: oklch(0.25 0.02 150);
+  --muted: oklch(0.95 0.01 95);
+  --muted-foreground: oklch(0.45 0.02 150);
+  --accent: oklch(0.80 0.16 85);
+  --accent-foreground: oklch(0.20 0.02 150);
+  --destructive: oklch(0.55 0.22 25);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.90 0.01 85);
-  --input: oklch(0.92 0.01 85);
-  --ring: oklch(0.65 0.18 55);
-  --chart-1: oklch(0.65 0.18 55);
-  --chart-2: oklch(0.70 0.15 145);
-  --chart-3: oklch(0.55 0.12 250);
-  --chart-4: oklch(0.75 0.12 30);
-  --chart-5: oklch(0.60 0.15 320);
-  --radius: 0.75rem;
-  --sidebar: oklch(0.97 0.005 85);
-  --sidebar-foreground: oklch(0.15 0.02 45);
-  --sidebar-primary: oklch(0.65 0.18 55);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.94 0.01 85);
-  --sidebar-accent-foreground: oklch(0.25 0.02 45);
-  --sidebar-border: oklch(0.90 0.01 85);
-  --sidebar-ring: oklch(0.65 0.18 55);
+  --border: oklch(0.91 0.01 95);
+  --input: oklch(0.93 0.01 95);
+  --ring: oklch(0.55 0.18 145);
+  --chart-1: oklch(0.55 0.18 145);
+  --chart-2: oklch(0.80 0.16 85);
+  --chart-3: oklch(0.55 0.22 25);
+  --chart-4: oklch(0.60 0.12 250);
+  --chart-5: oklch(0.65 0.14 320);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.97 0.008 95);
+  --sidebar-foreground: oklch(0.20 0.02 150);
+  --sidebar-primary: oklch(0.55 0.18 145);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.94 0.02 95);
+  --sidebar-accent-foreground: oklch(0.25 0.02 150);
+  --sidebar-border: oklch(0.91 0.01 95);
+  --sidebar-ring: oklch(0.55 0.18 145);
+  
+  /* Cameroon palette extras */
+  --cameroon-green: oklch(0.55 0.18 145);
+  --cameroon-yellow: oklch(0.85 0.16 90);
+  --cameroon-red: oklch(0.55 0.22 25);
 }
 
 .dark {
-  /* Dark mode - rich dark with amber/gold accents for nightlife vibe */
-  --background: oklch(0.12 0.015 45);
-  --foreground: oklch(0.95 0.01 85);
-  --card: oklch(0.16 0.015 45);
-  --card-foreground: oklch(0.95 0.01 85);
-  --popover: oklch(0.14 0.015 45);
-  --popover-foreground: oklch(0.95 0.01 85);
-  --primary: oklch(0.75 0.16 55);
-  --primary-foreground: oklch(0.12 0.015 45);
-  --secondary: oklch(0.22 0.015 45);
-  --secondary-foreground: oklch(0.95 0.01 85);
-  --muted: oklch(0.22 0.015 45);
-  --muted-foreground: oklch(0.65 0.02 85);
-  --accent: oklch(0.80 0.14 55);
-  --accent-foreground: oklch(0.12 0.015 45);
-  --destructive: oklch(0.50 0.20 27);
-  --destructive-foreground: oklch(0.95 0 0);
-  --border: oklch(0.25 0.015 45);
-  --input: oklch(0.22 0.015 45);
-  --ring: oklch(0.75 0.16 55);
-  --chart-1: oklch(0.75 0.16 55);
-  --chart-2: oklch(0.65 0.14 145);
-  --chart-3: oklch(0.55 0.10 250);
-  --chart-4: oklch(0.70 0.12 30);
-  --chart-5: oklch(0.60 0.14 320);
-  --sidebar: oklch(0.10 0.015 45);
-  --sidebar-foreground: oklch(0.95 0.01 85);
-  --sidebar-primary: oklch(0.75 0.16 55);
-  --sidebar-primary-foreground: oklch(0.12 0.015 45);
-  --sidebar-accent: oklch(0.20 0.015 45);
-  --sidebar-accent-foreground: oklch(0.95 0.01 85);
-  --sidebar-border: oklch(0.22 0.015 45);
-  --sidebar-ring: oklch(0.75 0.16 55);
+  /* Dark mode - Cameroon night vibes: rich, vibrant, energetic */
+  --background: oklch(0.14 0.02 150);
+  --foreground: oklch(0.94 0.01 95);
+  --card: oklch(0.18 0.02 150);
+  --card-foreground: oklch(0.94 0.01 95);
+  --popover: oklch(0.16 0.02 150);
+  --popover-foreground: oklch(0.94 0.01 95);
+  --primary: oklch(0.65 0.18 145);
+  --primary-foreground: oklch(0.14 0.02 150);
+  --secondary: oklch(0.22 0.02 150);
+  --secondary-foreground: oklch(0.94 0.01 95);
+  --muted: oklch(0.24 0.02 150);
+  --muted-foreground: oklch(0.65 0.02 95);
+  --accent: oklch(0.82 0.14 90);
+  --accent-foreground: oklch(0.14 0.02 150);
+  --destructive: oklch(0.55 0.20 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.28 0.02 150);
+  --input: oklch(0.22 0.02 150);
+  --ring: oklch(0.65 0.18 145);
+  --chart-1: oklch(0.65 0.18 145);
+  --chart-2: oklch(0.82 0.14 90);
+  --chart-3: oklch(0.55 0.20 25);
+  --chart-4: oklch(0.60 0.10 250);
+  --chart-5: oklch(0.62 0.12 320);
+  --sidebar: oklch(0.12 0.02 150);
+  --sidebar-foreground: oklch(0.94 0.01 95);
+  --sidebar-primary: oklch(0.65 0.18 145);
+  --sidebar-primary-foreground: oklch(0.14 0.02 150);
+  --sidebar-accent: oklch(0.22 0.02 150);
+  --sidebar-accent-foreground: oklch(0.94 0.01 95);
+  --sidebar-border: oklch(0.26 0.02 150);
+  --sidebar-ring: oklch(0.65 0.18 145);
+  
+  /* Cameroon palette extras */
+  --cameroon-green: oklch(0.65 0.18 145);
+  --cameroon-yellow: oklch(0.82 0.14 90);
+  --cameroon-red: oklch(0.55 0.20 25);
 }
 
 @theme inline {
   --font-sans: 'Inter', 'Geist', sans-serif;
-  --font-serif: 'Playfair Display', serif;
   --font-mono: 'Geist Mono', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -116,6 +125,9 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-cameroon-green: var(--cameroon-green);
+  --color-cameroon-yellow: var(--cameroon-yellow);
+  --color-cameroon-red: var(--cameroon-red);
 }
 
 @layer base {
@@ -127,41 +139,33 @@
   }
 }
 
-/* Custom scrollbar for dark mode */
-.dark ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
 
-.dark ::-webkit-scrollbar-track {
-  background: oklch(0.15 0.015 45);
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-.dark ::-webkit-scrollbar-thumb {
-  background: oklch(0.30 0.015 45);
-  border-radius: 4px;
+::-webkit-scrollbar-thumb {
+  background: oklch(0.50 0.02 150 / 0.3);
+  border-radius: 3px;
 }
 
-.dark ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.40 0.015 45);
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.50 0.02 150 / 0.5);
 }
 
-/* Glassmorphism utility */
-.glass {
-  background: oklch(0.16 0.015 45 / 0.8);
-  backdrop-filter: blur(12px);
-  border: 1px solid oklch(0.30 0.015 45 / 0.5);
-}
-
-.glass-light {
-  background: oklch(1 0 0 / 0.8);
-  backdrop-filter: blur(12px);
-  border: 1px solid oklch(0.90 0.01 85 / 0.5);
+/* Cameroon gradient - green to yellow */
+.cameroon-gradient {
+  background: linear-gradient(135deg, var(--cameroon-green), var(--cameroon-yellow));
 }
 
 /* Gradient text utility */
 .text-gradient {
-  background: linear-gradient(135deg, oklch(0.75 0.16 55), oklch(0.85 0.12 45));
+  background: linear-gradient(135deg, var(--cameroon-green), var(--cameroon-yellow));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -175,4 +179,13 @@
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+/* Soft shadow for cards */
+.card-shadow {
+  box-shadow: 0 2px 8px -2px oklch(0.20 0.02 150 / 0.08), 0 4px 16px -4px oklch(0.20 0.02 150 / 0.06);
+}
+
+.dark .card-shadow {
+  box-shadow: 0 2px 8px -2px oklch(0 0 0 / 0.3), 0 4px 16px -4px oklch(0 0 0 / 0.2);
 }
